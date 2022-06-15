@@ -1,15 +1,9 @@
 #include "solution.h"
 #include "util.h"
-#include <unordered_set>
-#include <numeric>
-#include <iterator>
-#include <unordered_map>
-#include <deque>
+
 #include <string>
 #include <sstream>
-#include <algorithm>
-#include <stack>
-#include <iostream>
+
 using namespace sol124;
 using namespace std;
 
@@ -43,6 +37,11 @@ void Codec::_serialize(Node *root, ostringstream &out)
 {
   if (root == nullptr)
   {
+    /* indicate an empty node
+       - the separate needs to be a space char because we
+         are using istringstream to parse the tokens
+         later when deserializing
+    */
     out << "^ ";
     return;
   }

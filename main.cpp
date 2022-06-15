@@ -3,7 +3,7 @@
 #include <vector>
 #include <string>
 #include <tuple>
-#include <unordered_map>
+
 #include "solution.h"
 #include "util.h"
 
@@ -42,7 +42,6 @@ void test1()
   auto root = sol.deserialize(s);
 
   cout << "Expect to see 5: " << root->right->right->val << endl;
-  
 }
 
 void call(istringstream &in)
