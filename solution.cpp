@@ -8,6 +8,7 @@ using namespace sol124;
 using namespace std;
 
 /*takeaways
+  - perform a preorder traversal
   - ok was confused when the deseraliztion will
     terminate.
     - the string must be ended with "^ ^ "
